@@ -16,8 +16,6 @@ app.get('/', (req, res) => {
 
 app.post('/send-email',(req, res) => {
     const { fullname, email, message } = req.body;
-    console.log(fullname, email, message);
-
     sendMail({ fullname, email, message })
         .then(result => {
             res.json(result);
