@@ -1,18 +1,29 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
+// const transporter = nodemailer.createTransport({
+//   host: process.env.mail_server,
+//   secure: true,
+//   port: 465,
+//   auth: {
+//     user: process.env.mail_user,
+//     pass: process.env.mail_pass,
+//   },
+//   tls: {
+//     rejectUnauthorized: false,
+//   },
+// });
+
 const transporter = nodemailer.createTransport({
   host: process.env.mail_server,
-  secure: true,
-  port: 465,
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.mail_user,
     pass: process.env.mail_pass,
   },
-  tls: {
-    rejectUnauthorized: false,
-  },
 });
+
 
 async function sendMail({ fullname, email, message }) {
   const mailOptions = {
