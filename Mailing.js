@@ -1,40 +1,33 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
-// const transporter = nodemailer.createTransport({
-//   host: process.env.mail_server,
-//   secure: true,
-//   port: 465,
-//   auth: {
-//     user: process.env.mail_user,
-//     pass: process.env.mail_pass,
-//   },
-//   tls: {
-//     rejectUnauthorized: false,
-//   },
-// });
-
-console.log("Mail server:", process.env.mail_server);
-console.log("Mail user:", process.env.mail_user);
-console.log("Mail pass:", process.env.mail_pass);
-
 const transporter = nodemailer.createTransport({
-    host: process.env.mail_server,
+    service: 'gmail',
+    host: 'smtp.gmail.com',
     port: 587,
     secure: false,
     auth: {
         user: process.env.mail_user,
-        pass: process.env.mail_pass,
+        pass: process.env.mail_pass
     },
+    tls: {
+        rejectUnauthorized: false
+    }
 });
 
+// Verify connection configuration
+transporter.verify(function (error, success) {
+    if (error) {
+        console.log("Error verifying transport:", error);
+    } else {
+        console.log("Server is ready to take our messages");
+    }
+});
 
 async function sendMail({ fullname, email, message }) {
-
-    console.log("Mail server:", process.env.mail_server);
-
     const mailOptions = {
-        from: email,
+        from: `"Portfolio Contact" <${process.env.mail_user}>`,
+        replyTo: email,
         to: process.env.mail_user,
         subject: `New message from ${fullname} from portfolio website`,
         text: message,
@@ -66,14 +59,16 @@ async function sendMail({ fullname, email, message }) {
       </div>
     </div>
   </div>
-  `,
+  `
     };
+
     try {
-        await transporter.sendMail(mailOptions);
+        const info = await transporter.sendMail(mailOptions);
+        console.log('Email sent: ', info.messageId);
         return { success: true };
     } catch (error) {
         console.error('Error sending email:', error);
-        return { success: false };
+        return { success: false, error: error.message };
     }
 }
 
