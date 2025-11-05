@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/avatar.png"
+      type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/avatar.png" alt="Baschirou Abdel Karim"
+              width="80">
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Baschirou Abdel Karim">Baschirou <br>
+              Abdel Karim</h1>
+            <p class="title">Cybersecurity & Full Stack Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:abdelkarimbaschirou@gmail.com"
+                  class="contact-link">abdelkarimbaschirou@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+254743796606" class="contact-link">+254 743 796
+                  606</a>
+                <a href="tel:+254790713686" class="contact-link">+254 790 173
+                  686</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Nairobi, Kenya</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/baschirou-abdel-karim-7092b61a1/"
+                class="social-link" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/Abdel-Karim-cmds" class="social-link"
+                target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about  active" data-page="about">
+
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a final-year Master's student in Information Systems and
+              Technology with a concentration in Cybersecurity at United States
+              International University - Africa. I specialize in ethical
+              hacking, vulnerability assessment, and secure software
+              development.
+            </p>
+
+            <p>
+              With expertise in ReactJS, ExpressJS, Java, Python, and Git, I
+              have experience building and securing web, desktop, Android, and
+              AI applications. I am a strong collaborator with proven project
+              teamwork experience and leadership skills demonstrated through
+              various university roles including Culture Week Chairperson and
+              Student Ambassador Committee member.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg" alt="security icon"
+                    width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cybersecurity</h4>
+                  <p class="service-item-text">
+                    Expertise in ethical hacking, vulnerability assessment, and
+                    secure software development.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg"
+                    alt="Web development icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Full Stack Development</h4>
+                  <p class="service-item-text">
+                    Professional development using ReactJS, ExpressJS, Node.js,
+                    and modern web technologies.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-app.svg" alt="mobile app icon"
+                    width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Application Development</h4>
+                  <p class="service-item-text">
+                    Development of secure desktop and mobile applications using
+                    Java and modern frameworks.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-design.svg" alt="AI icon"
+                    width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">AI Applications</h4>
+                  <p class="service-item-text">
+                    Development of AI applications with focus on security and
+                    data protection.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Certificates</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/ethical-hacker.png" alt="Cisco"
+                      width="60" data-testimonials-avatar>
+                  </figure>
+                  <h4 class="h4 testimonials-item-title"
+                    data-testimonials-title>Cisco Ethical Hacker</h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>Professional certification in ethical hacking and
+                      penetration testing methodologies.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/introduction-to-cybersecurity.png"
+                      alt="Cisco" width="60" data-testimonials-avatar>
+                  </figure>
+                  <h4 class="h4 testimonials-item-title"
+                    data-testimonials-title>Introduction to Cybersecurity</h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>Foundational knowledge in cybersecurity principles and
+                      practices.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/cyberops-associate.png"
+                      alt="Cisco" width="60" data-testimonials-avatar>
+                  </figure>
+                  <h4 class="h4 testimonials-item-title"
+                    data-testimonials-title>Cisco CyberOps Associate</h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>Advanced certification in security operations and threat
+                      management.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/network-defense.png" alt="Cisco"
+                      width="60" data-testimonials-avatar>
+                  </figure>
+                  <h4 class="h4 testimonials-item-title"
+                    data-testimonials-title>Cisco Network Defense</h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>Specialized certification in network security and defense
+                      strategies.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/cyber-threat-management.png"
+                      alt="Cisco" width="60" data-testimonials-avatar>
+                  </figure>
+                  <h4 class="h4 testimonials-item-title"
+                    data-testimonials-title>Cisco CyberThreat Management</h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>Advanced certification in cyber threat detection and
+                      management.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis"
+                    width="80" data-modal-img>
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon">
+              </div>
+
+              <div class="modal-content">
+
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+
+            </section>
+
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Work Experience</h3>
+
+            <ul class="clients-list has-scrollbar">
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/girlsandboysintech_logo.jpeg"
+                    alt="GirlsAndBoyInTech logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/au logo.png" alt="AU-IBAR logo">
+                </a>
+              </li>
+            </ul>
+
+          </section>
+
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Masters of Science in
+                  Information System Technology</h4>
+                <span>2024 — Present</span>
+                <p class="timeline-text">
+                  United States International University - Africa, Nairobi,
+                  Kenya
+                  Concentration in Cybersecurity
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Bachelor of Science in
+                  Applied Computer Technology</h4>
+                <span>2020 — 2023</span>
+                <p class="timeline-text">
+                  United States International University - Africa, Nairobi,
+                  Kenya
+                </p>
+              </li>
+            </ol>
+
+          </section>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Various Leadership Roles -
+                  United States International University - Africa</h4>
+                <span>2022 — 2025</span>
+                <p class="timeline-text">
+                  • Chairperson of Culture Week (2024-2025): Led executive
+                  committee, managed event planning and execution<br>
+                  • Student Ambassador Committee Member (2022-2025): Coordinated
+                  student volunteers and campus events<br>
+                  • Layout Designer, Yearbook Team (2024-2025): Responsible for
+                  yearbook design and layout
+                </p>
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Intern -
+                  GirlsAndBoyInTech</h4>
+
+                <span>2023 — 2024</span>
+
+                <p class="timeline-text">
+                  Remote internship focused on developing and implementing
+                  technical solutions
+                </p>
+
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Intern - African Union
+                  Inter-African Bureau of Animal Resources</h4>
+
+                <span>2023</span>
+
+                <p class="timeline-text">
+                  Developed Visa Request Management System using NodeJS,
+                  ExpressJS, and MariaDB
+                </p>
+
+              </li>
+
+            </ol>
+
+          </section>
+
+          <section class="skill">
+
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Development</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Cybersecurity</h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Backend Development</h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Frontend Development</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </section>
+
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="code-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Web Development Projects</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Car Service System</h4>
+                <span>02/2024 — 03/2024</span>
+                <p class="timeline-text">
+                  An application developed using Node.js and Express that facilitates service booking,
+                  such as maintenance, at designated locations, while integrating the Google Maps API.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Job Portal</h4>
+                <span>05/2023 — 11/2023</span>
+                <p class="timeline-text">
+                  Developing a Web Application that allows organizations to post jobs as well as
+                  to help people easily find job opportunities. Built using ReactJS as front-end 
+                  and Express JS and NodeJS as back-end.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Online Charity Management System</h4>
+                <span>01/2023 — 04/2023</span>
+                <p class="timeline-text">
+                  Online Charity Management System using Express JS and NodeJS.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Learning Management System</h4>
+                <span>09/2022 — 11/2022</span>
+                <p class="timeline-text">
+                  Learning Management System using NodeJS and ExpressJS.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="apps-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Applications</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Visa Request Management System</h4>
+                <span>06/2023 — 09/2023</span>
+                <p class="timeline-text">
+                  A system designed for the AU-IBAR during my internship to help their
+                  employees handle visa requests. Built using NodeJS, ExpressJS, and MariaDB.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Chatbot Web Application</h4>
+                <span>12/2023 — 02/2024</span>
+                <p class="timeline-text">
+                  Automated chat system which analyzes user input during my internship. 
+                  The data is analyzed through AWS service to get response. Built using 
+                  NodeJS and Express JS with data encryption.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Encrypted Chat System</h4>
+                <span>07/2022 — 08/2022</span>
+                <p class="timeline-text">
+                  A system that allows two users to communicate with one another. 
+                  The system encrypts the connection and the messages between the two parties. 
+                  Built using Java.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="create-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Web Design</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Art Gallery</h4>
+                <span>01/2024 — 04/2024</span>
+                <p class="timeline-text">
+                  Web application which allows art enthusiasts to buy and sell art pieces 
+                  through an interactive app.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Volunteering System</h4>
+                <span>02/2025 — 04/2025</span>
+                <p class="timeline-text">
+                  A platform that allows organizations to post volunteering opportunities 
+                  as well as events for people to sign up.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4954.98858733166!2d36.87644587585696!3d-1.2146804987737276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15f826d2697b%3A0x283746033cb1b5a5!2sUnited%20States%20International%20University-Africa!5e1!3m2!1sen!2ske!4v1762312500139!5m2!1sen!2ske"
+                width="400" height="300" allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form class="form" id="contact-form">
+
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" id="fullname"
+                  placeholder="Full name" required >
+
+                <input type="email" name="email" class="form-input" id="email"
+                  placeholder="Email address" required>
+              </div>
+
+              <textarea name="message" class="form-input" id="message"
+                placeholder="Your Message" required ></textarea>
+
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+
+            </form>
+
+          </section>
+
+        </article>
+
+      </div>
+
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/contact.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+
+</html>
