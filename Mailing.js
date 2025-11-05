@@ -14,6 +14,10 @@ require('dotenv').config();
 //   },
 // });
 
+console.log("Mail server:", process.env.mail_server);
+console.log("Mail user:", process.env.mail_user);
+console.log("Mail pass:", process.env.mail_pass);
+
 const transporter = nodemailer.createTransport({
   host: process.env.mail_server,
   port: 587,
