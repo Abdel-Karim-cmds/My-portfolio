@@ -1409,6 +1409,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials */
 
+  .testimonial-title{
+    font-weight: var(--fw-300);
+    font-size: 15px;
+  }
+
   .testimonials-title { margin-bottom: 25px; }
 
   .testimonials-list {

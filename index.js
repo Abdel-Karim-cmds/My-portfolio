@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'My Portfolio' });
 })
 
+app.get('/fr', (req, res) => {
+    res.render('index_fr', { title: 'Mon Portfolio' });
+})
+
 app.post('/send-email',(req, res) => {
     const { fullname, email, message } = req.body;
     sendMail({ fullname, email, message })
