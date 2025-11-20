@@ -520,32 +520,32 @@ export const TRANSLATIONS: { en: Content; fr: Content } = {
       {
         name: "Cisco Ethical Hacker",
         issuer: "Cisco",
-        url: "https://www.credly.com/org/cisco/badge/ethical-hacker", 
-        imageUrl: "https://images.credly.com/size/340x340/images/6a091966-26ca-475d-a34b-3f3662f2c4db/Ethical_Hacker_Badge.png"
+        url: "https://www.credly.com/badges/23b21e24-59df-4654-a805-36662962cd77/linked_in_profile", 
+        imageUrl: ethicalHacker
       },
       {
         name: "Cisco CyberOps Associate",
         issuer: "Cisco",
-        url: "https://www.credly.com/org/cisco/badge/cyberops-associate",
-        imageUrl: "https://images.credly.com/size/340x340/images/98219fae-2956-4882-b80e-e0262480529d/CyberOps_Associate__1_.png"
+        url: "https://www.credly.com/badges/724fc500-4e2e-4f14-a19d-4b0ed98ad00c",
+        imageUrl: cyberops
       },
       {
         name: "Cisco Cyber Threat Management",
         issuer: "Cisco",
-        url: "https://www.credly.com",
-        imageUrl: "https://images.credly.com/size/340x340/images/9f4433f5-0847-485a-a490-3a455165288f/Cyber_Threat_Management_Badge.png"
+        url: "https://www.credly.com/badges/907c5519-3308-4205-86c9-03e5449098a8/public_url",
+        imageUrl: cyberThreatManagement
       },
       {
         name: "Introduction à la Cybersécurité",
         issuer: "Cisco",
-        url: "https://www.credly.com/org/cisco/badge/introduction-to-cybersecurity",
-        imageUrl: "https://images.credly.com/size/340x340/images/122f4d2d-62d7-40a5-8b39-3f82ce495963/Introduction_to_Cybersecurity_Badge.png"
+        url: "https://www.credly.com/badges/ce167140-6b43-4914-9031-6e68729ba53e/public_url",
+        imageUrl: introToCybersecurity
       },
       {
         name: "Défense Réseau Cisco",
         issuer: "Cisco",
-        url: "https://www.credly.com/org/cisco/badge/network-defense",
-        imageUrl: "https://images.credly.com/size/340x340/images/22d19f3f-e786-42c4-9345-40ce569137b4/Network_Defense_Badge.png"
+        url: "https://www.credly.com/badges/22cfeccc-3a57-4334-853d-f530ce733df5/public_url",
+        imageUrl: networkDefense
       }
     ],
     volunteering: [
