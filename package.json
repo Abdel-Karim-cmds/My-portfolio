@@ -2,13 +2,27 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abdel-Karim-cmds/My-portfolio.git"
+  },
+  
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.554.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   },
   "keywords": [],
   "author": "",
@@ -17,11 +31,5 @@
   "bugs": {
     "url": "https://github.com/Abdel-Karim-cmds/My-portfolio/issues"
   },
-  "homepage": "https://github.com/Abdel-Karim-cmds/My-portfolio#readme",
-  "dependencies": {
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "hbs": "^4.2.0",
-    "nodemailer": "^7.0.10"
-  }
+  "homepage": "https://github.com/Abdel-Karim-cmds/My-portfolio#readme"
 }

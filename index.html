@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baschirou Abdel Karim | Cybersecurity & Full Stack Developer</title>
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="/avatar.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px; /* Offsets the fixed navbar height for anchor links */
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Oswald', sans-serif;
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gold-border {
+        border-image: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C) 1;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+
+      /* Falling Animation */
+      @keyframes fallIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-100px) scale(1.5);
+          filter: blur(10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+          filter: blur(0);
+        }
+      }
+      .animate-fall-in {
+        animation: fallIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
