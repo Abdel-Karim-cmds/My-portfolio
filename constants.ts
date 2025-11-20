@@ -109,7 +109,7 @@ export const TRANSLATIONS: { en: Content; fr: Content } = {
     personalInfo: {
       ...PERSONAL_INFO_BASE,
       title: "Cybersecurity Specialist & Full Stack Developer",
-      profile: "My name is Baschirou Abdel Karim, and I am a dedicated Cybersecurity specialist and Full Stack Developer based in Nairobi, Kenya. Currently in the final stages of my Master's in Information Systems and Technology at USIU-Africa, I am driven by a dual passion: building innovative software solutions and ensuring they are inherently secure. Beyond the technical realm, I am a proactive leader and a strong believer in the power of collaboration, demonstrated by my role as Chairperson of Culture Week. I thrive in dynamic environments where I can apply my problem-solving skills to create safer, more efficient digital experiences."
+      profile: "I am a dedicated Cybersecurity specialist and Full Stack Developer based in Nairobi, Kenya. Currently in the final stages of my Master's in Information Systems and Technology at USIU-Africa, I am driven by a dual passion: building innovative software solutions and ensuring they are inherently secure. Beyond the technical realm, I am a proactive leader and a strong believer in the power of collaboration, demonstrated by my role as Chairperson of Culture Week. I thrive in dynamic environments where I can apply my problem-solving skills to create safer, more efficient digital experiences."
     },
     education: [
       {
@@ -391,7 +391,7 @@ export const TRANSLATIONS: { en: Content; fr: Content } = {
     personalInfo: {
       ...PERSONAL_INFO_BASE,
       title: "Spécialiste en Cybersécurité & Développeur Full Stack",
-      profile: "Je m'appelle Baschirou Abdel Karim et je suis un spécialiste dévoué en cybersécurité et un développeur Full Stack basé à Nairobi, au Kenya. Actuellement en phase finale de mon Master en Systèmes d'Information et Technologie à l'USIU-Africa, je suis animé par une double passion : créer des solutions logicielles innovantes et garantir leur sécurité intrinsèque. Au-delà du domaine technique, je suis un leader proactif et un fervent croyant en la force de la collaboration, comme en témoigne mon rôle de Président de la Semaine Culturelle. J'évolue dans des environnements dynamiques où je peux appliquer mes compétences en résolution de problèmes pour créer des expériences numériques plus sûres et plus efficaces."
+      profile: "Je suis un spécialiste dévoué en cybersécurité et un développeur Full Stack basé à Nairobi, au Kenya. Actuellement en phase finale de mon Master en Systèmes d'Information et Technologie à l'USIU-Africa, je suis animé par une double passion : créer des solutions logicielles innovantes et garantir leur sécurité intrinsèque. Au-delà du domaine technique, je suis un leader proactif et un fervent croyant en la force de la collaboration, comme en témoigne mon rôle de Président de la Semaine Culturelle. J'évolue dans des environnements dynamiques où je peux appliquer mes compétences en résolution de problèmes pour créer des expériences numériques plus sûres et plus efficaces."
     },
     education: [
       {
